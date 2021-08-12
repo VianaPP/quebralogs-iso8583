@@ -1,0 +1,9 @@
+C:\Users\pedro.viana\Desktop\C#\Programa_C#\programa-quebralog-iso8583\Mensagem-ISO8583\Mensagem-ISO8583\bin\Debug\Mensagem-ISO8583.exe.config
+C:\Users\pedro.viana\Desktop\C#\Programa_C#\programa-quebralog-iso8583\Mensagem-ISO8583\Mensagem-ISO8583\bin\Debug\Mensagem-ISO8583.exe
+C:\Users\pedro.viana\Desktop\C#\Programa_C#\programa-quebralog-iso8583\Mensagem-ISO8583\Mensagem-ISO8583\bin\Debug\Mensagem-ISO8583.pdb
+C:\Users\pedro.viana\Desktop\C#\Programa_C#\programa-quebralog-iso8583\Mensagem-ISO8583\Mensagem-ISO8583\obj\Debug\Mensagem-ISO8583.csprojResolveAssemblyReference.cache
+C:\Users\pedro.viana\Desktop\C#\Programa_C#\programa-quebralog-iso8583\Mensagem-ISO8583\Mensagem-ISO8583\obj\Debug\Mensagem_ISO8583.Properties.Resources.resources
+C:\Users\pedro.viana\Desktop\C#\Programa_C#\programa-quebralog-iso8583\Mensagem-ISO8583\Mensagem-ISO8583\obj\Debug\Mensagem-ISO8583.csproj.GenerateResource.Cache
+C:\Users\pedro.viana\Desktop\C#\Programa_C#\programa-quebralog-iso8583\Mensagem-ISO8583\Mensagem-ISO8583\obj\Debug\Mensagem-ISO8583.exe
+C:\Users\pedro.viana\Desktop\C#\Programa_C#\programa-quebralog-iso8583\Mensagem-ISO8583\Mensagem-ISO8583\obj\Debug\Mensagem-ISO8583.pdb
+C:\Users\pedro.viana\Desktop\C#\Programa_C#\programa-quebralog-iso8583\Mensagem-ISO8583\Mensagem-ISO8583\obj\Debug\Mensagem_ISO8583.FormISO.resources
