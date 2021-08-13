@@ -338,10 +338,27 @@ namespace Mensagem_ISO8583
                         resto_log = resto_log.Remove(0, 4);
                         Campo = resto_log.Substring(0, restoCampo);
 
-        
+                        txtResult.Text += "Bit 47: \r\n";
+                        string logSubs = Campo;
 
-                        txtResult.Text += "Bit 47: " + Campo + "\r\n\r\n";
+                        for (int c = 0; c < logSubs.Length; c++ )
+                        {
 
+                            string subCampo = logSubs.Substring(0, 4);
+                            int subInt = Int32.Parse(subCampo);
+                            int tamanhoSub = subInt;
+                            txtResult.Text += "SubCampo: " + subCampo;
+                            logSubs = logSubs.Remove(0, 4);
+                            
+                            string idSub = logSubs.Substring(0, 2);
+                            txtResult.Text += "\r\n Id: " + idSub;
+                            logSubs = logSubs.Remove(0, 2);
+
+                            string restoSub = logSubs.Substring(0, tamanhoSub);
+                            txtResult.Text += "\r\n" + restoSub + "\r\n\r\n";
+                            logSubs = logSubs.Remove(0, tamanhoSub);
+                        }
+                    
                         resto_log = resto_log.Remove(0, restoCampo);
 
                     }
