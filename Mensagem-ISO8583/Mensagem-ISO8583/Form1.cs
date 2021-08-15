@@ -106,7 +106,7 @@ namespace Mensagem_ISO8583
                         resto_log = resto_log.Remove(0, 2);
                         Campo = resto_log.Substring(0, restoCampo);
 
-                        txtResult.Text += "Bit 2: " + Campo + "\r\n\r\n";
+                        txtResult.Text += "Bit 2: " + "\r\n" + "Número do cartão: " + Campo + "\r\n\r\n";
 
                         resto_log = resto_log.Remove(0, restoCampo);
 
@@ -115,7 +115,7 @@ namespace Mensagem_ISO8583
                     {
                         string Campo = resto_log.Substring(0, 6);
 
-                        txtResult.Text += "Bit 3: " + Campo + "\r\n\r\n";
+                        txtResult.Text += "Bit 3: " + "\r\n" + "Código Processamento: " + Campo + "\r\n\r\n";
 
                         resto_log = resto_log.Remove(0, 6);
 
@@ -124,7 +124,7 @@ namespace Mensagem_ISO8583
                     {
                         string Campo = resto_log.Substring(0, 12);
 
-                        txtResult.Text += "Bit 4: " + Campo + "\r\n\r\n";
+                        txtResult.Text += "Bit 4: " + "\r\n" + "Valor total da transação: " + Campo + "\r\n\r\n";
 
                         resto_log = resto_log.Remove(0, 12);
 
@@ -133,7 +133,7 @@ namespace Mensagem_ISO8583
                     {
                         string Campo = resto_log.Substring(0, 6);
 
-                        txtResult.Text += "Bit 11: " + Campo + "\r\n\r\n";
+                        txtResult.Text += "Bit 11: " + "\r\n" + "Número do documento: " + Campo + "\r\n\r\n";
 
                         resto_log = resto_log.Remove(0, 6);
 
@@ -142,7 +142,7 @@ namespace Mensagem_ISO8583
                     {
                         string Campo = resto_log.Substring(0, 12);
 
-                        txtResult.Text += "Bit 12: " + Campo + "\r\n\r\n";
+                        txtResult.Text += "Bit 12: " + "\r\n" + "Data e hora local: " + Campo + "\r\n\r\n";
 
                         resto_log = resto_log.Remove(0, 12);
 
@@ -151,7 +151,7 @@ namespace Mensagem_ISO8583
                     {
                         string Campo = resto_log.Substring(0, 4);
 
-                        txtResult.Text += "Bit 14: " + Campo + "\r\n\r\n";
+                        txtResult.Text += "Bit 14: " + "\r\n" + "Data de validade do cartão: " + Campo + "\r\n\r\n";
 
                         resto_log = resto_log.Remove(0, 4);
 
@@ -160,7 +160,7 @@ namespace Mensagem_ISO8583
                     {
                         string Campo = resto_log.Substring(0, 4);
 
-                        txtResult.Text += "Bit 18: " + Campo + "\r\n\r\n";
+                        txtResult.Text += "Bit 18: " + "\r\n" + "Código MCC: " + Campo + "\r\n\r\n";
 
                         resto_log = resto_log.Remove(0, 4);
 
@@ -169,7 +169,7 @@ namespace Mensagem_ISO8583
                     {
                         string Campo = resto_log.Substring(0, 12);
 
-                        txtResult.Text += "Bit 22: " + Campo + "\r\n\r\n";
+                        txtResult.Text += "Bit 22: " + "\r\n" + "Modo de entrada: " + Campo + "\r\n\r\n";
 
                         resto_log = resto_log.Remove(0, 12);
 
@@ -178,7 +178,7 @@ namespace Mensagem_ISO8583
                     {
                         string Campo = resto_log.Substring(0, 2);
 
-                        txtResult.Text += "Bit 23: " + Campo + "\r\n\r\n";
+                        txtResult.Text += "Bit 23: " + "\r\n" + "Número sequencial do cartão: " + Campo + "\r\n\r\n";
 
                         resto_log = resto_log.Remove(0, 2);
 
@@ -187,7 +187,7 @@ namespace Mensagem_ISO8583
                     {
                         string Campo = resto_log.Substring(0, 4);
 
-                        txtResult.Text += "Bit 24: " + Campo + "\r\n\r\n";
+                        txtResult.Text += "Bit 24: " + "\r\n" + "Solução de autorização: " + Campo + "\r\n\r\n";
 
                         resto_log = resto_log.Remove(0, 4);
 
@@ -207,7 +207,7 @@ namespace Mensagem_ISO8583
                         }
 
 
-                        txtResult.Text += "Bit 31: " + Campo + "\r\n\r\n";
+                        txtResult.Text += "Bit 31: " + "\r\n" + "Identificação do cartão: " + Campo + "\r\n\r\n";
 
                         resto_log = resto_log.Remove(0, restoCampo);
 
@@ -226,7 +226,7 @@ namespace Mensagem_ISO8583
                         }
 
 
-                        txtResult.Text += "Bit 34: " + Campo + "\r\n\r\n";
+                        txtResult.Text += "Bit 34: " + "\r\n" + "Código de Segurança: " + Campo + "\r\n\r\n";
 
                         resto_log = resto_log.Remove(0, restoCampo);
 
@@ -240,7 +240,7 @@ namespace Mensagem_ISO8583
                         resto_log = resto_log.Remove(0, 2);
                         Campo = resto_log.Substring(0, restoCampo);
 
-                        txtResult.Text += "Bit 35: " + Campo + "\r\n\r\n";
+                        txtResult.Text += "Bit 35: " + "\r\n" + "Trilha 2: " + Campo + "\r\n\r\n";
 
                         resto_log = resto_log.Remove(0, restoCampo);
 
@@ -249,7 +249,7 @@ namespace Mensagem_ISO8583
                     {
                         string Campo = resto_log.Substring(0, 12);
 
-                        txtResult.Text += "Bit 38: " + Campo + "\r\n\r\n";
+                        txtResult.Text += "Bit 38: " + "\r\n" + "Código de autorização: " + Campo + "\r\n\r\n";
                         for (int contador = 0; contador < Campo.Length; contador++)
                         {
                             Campo = Campo.Remove(contador, 1);
@@ -268,7 +268,7 @@ namespace Mensagem_ISO8583
                         }
 
 
-                        txtResult.Text += "Bit 39: " + Campo + "\r\n\r\n";
+                        txtResult.Text += "Bit 39: " + "\r\n" + "Código de resposta: " + Campo + "\r\n\r\n";
 
                         resto_log = resto_log.Remove(0, 6);
 
@@ -282,7 +282,7 @@ namespace Mensagem_ISO8583
                             Campo = Campo.Remove(contador, 1);
                         }
 
-                        txtResult.Text += "Bit 41: " + Campo + "\r\n\r\n";
+                        txtResult.Text += "Bit 41: " + "\r\n" + "Número Lógico do Terminal: " + Campo + "\r\n\r\n";
 
                         resto_log = resto_log.Remove(0, 16);
 
@@ -291,7 +291,7 @@ namespace Mensagem_ISO8583
                     {
                         string Campo = resto_log.Substring(0, 16);
 
-                        txtResult.Text += "Bit 42: " + Campo + "\r\n\r\n";
+                        txtResult.Text += "Bit 42: " + "\r\n" + "Código do estabelecimento para Venda: " + Campo + "\r\n\r\n";
 
                         resto_log = resto_log.Remove(0, 16);
 
@@ -305,7 +305,7 @@ namespace Mensagem_ISO8583
                         resto_log = resto_log.Remove(0, 2);
                         Campo = resto_log.Substring(0, restoCampo);
 
-                        txtResult.Text += "Bit 43: " + Campo + "\r\n\r\n";
+                        txtResult.Text += "Bit 43: " + "\r\n" + "Código do estabbelecimento Físico: " + Campo + "\r\n\r\n";
 
                         resto_log = resto_log.Remove(0, restoCampo);
 
@@ -324,7 +324,7 @@ namespace Mensagem_ISO8583
                         }
 
 
-                        txtResult.Text += "Bit 45: " + Campo + "\r\n\r\n";
+                        txtResult.Text += "Bit 45: " + "\r\n" + "Trilha 1: " + Campo + "\r\n\r\n";
 
                         resto_log = resto_log.Remove(0, restoCampo);
 
@@ -346,13 +346,12 @@ namespace Mensagem_ISO8583
 
                             string subCampo = logSubs.Substring(0, 4);
                             int subInt = Int32.Parse(subCampo);
-                            int tamanhoSub = subInt;
+                            int tamanhoSub = subInt * 2;
                             txtResult.Text += "SubCampo: " + subCampo;
                             logSubs = logSubs.Remove(0, 4);
                             
                             string idSub = logSubs.Substring(0, 2);
-                            txtResult.Text += "\r\n Id: " + idSub;
-                            logSubs = logSubs.Remove(0, 2);
+                            txtResult.Text += "\r\n ID: " + idSub;
 
                             string restoSub = logSubs.Substring(0, tamanhoSub);
                             txtResult.Text += "\r\n" + restoSub + "\r\n\r\n";
@@ -366,7 +365,7 @@ namespace Mensagem_ISO8583
                     {
                         string Campo = resto_log.Substring(0, 4);
 
-                        txtResult.Text += "Bit 49: " + Campo + "\r\n\r\n";
+                        txtResult.Text += "Bit 49: " + "\r\n" + "Código da Moeda: " + Campo + "\r\n\r\n";
 
                         resto_log = resto_log.Remove(0, 4);
 
@@ -375,7 +374,7 @@ namespace Mensagem_ISO8583
                     {
                         string Campo = resto_log.Substring(0, 16);
 
-                        txtResult.Text += "Bit 52: " + Campo + "\r\n\r\n";
+                        txtResult.Text += "Bit 52: " + "\r\n" + "PIN BLOCK: " + Campo + "\r\n\r\n";
 
                         resto_log = resto_log.Remove(0, 16);
 
@@ -388,8 +387,12 @@ namespace Mensagem_ISO8583
 
                         resto_log = resto_log.Remove(0, 2);
                         Campo = resto_log.Substring(0, restoCampo);
+                        string TDC = Campo.Substring(0, 2);
+                        string KNS = Campo.Substring(2);
 
-                        txtResult.Text += "Bit 53: " + Campo + "\r\n\r\n";
+                        txtResult.Text += "Bit 53: " + "\r\n";
+                        txtResult.Text += "Tipo de Criptografia: " + TDC + "\r\n";
+                        txtResult.Text += "KNS: " + KNS + "\r\n\r\n";
 
                         resto_log = resto_log.Remove(0, restoCampo);
 
@@ -402,8 +405,12 @@ namespace Mensagem_ISO8583
 
                         resto_log = resto_log.Remove(0, 4);
                         Campo = resto_log.Substring(0, restoCampo);
+                        string CDV = Campo.Substring(0, 2);
+                        string VRC = Campo.Substring(2);
 
-                        txtResult.Text += "Bit 54: " + Campo + "\r\n\r\n";
+                        txtResult.Text += "Bit 54: " + "\r\n";
+                        txtResult.Text += "Código do Valor: " + CDV + "\r\n";
+                        txtResult.Text += "Valor referente ao código: " + VRC + "\r\n\r\n";
 
                         resto_log = resto_log.Remove(0, restoCampo);
 
@@ -417,7 +424,26 @@ namespace Mensagem_ISO8583
                         resto_log = resto_log.Remove(0, 4);
                         Campo = resto_log.Substring(0, restoCampo);
 
-                        txtResult.Text += "Bit 55: " + Campo + "\r\n\r\n";
+                        txtResult.Text += "Bit 55: \r\n";
+                        string logSubs = Campo;
+
+                        for (int c = 0; c < logSubs.Length; c++)
+                        {
+
+                            string subCampo = logSubs.Substring(0, 4);
+                            int subInt = Int32.Parse(subCampo);
+                            int tamanhoSub = subInt * 2;
+                            txtResult.Text += "SubCampo: " + subCampo;
+                            logSubs = logSubs.Remove(0, 4);
+
+                            string idSub = logSubs.Substring(0, 2);
+                            txtResult.Text += "\r\n ID: " + idSub;
+
+                            string restoSub = logSubs.Substring(0, tamanhoSub);
+                            txtResult.Text += "\r\n" + restoSub + "\r\n\r\n";
+                            logSubs = logSubs.Remove(0, tamanhoSub);
+                        }
+
 
                         resto_log = resto_log.Remove(0, restoCampo);
 
@@ -431,7 +457,25 @@ namespace Mensagem_ISO8583
                         resto_log = resto_log.Remove(0, 4);
                         Campo = resto_log.Substring(0, restoCampo);
 
-                        txtResult.Text += "Bit 57: " + Campo + "\r\n\r\n";
+                        txtResult.Text += "Bit 57: \r\n";
+                        string logSubs = Campo;
+
+                        for (int c = 0; c < logSubs.Length; c++)
+                        {
+
+                            string subCampo = logSubs.Substring(0, 4);
+                            int subInt = Int32.Parse(subCampo);
+                            int tamanhoSub = subInt * 2;
+                            txtResult.Text += "SubCampo: " + subCampo;
+                            logSubs = logSubs.Remove(0, 4);
+
+                            string idSub = logSubs.Substring(0, 2);
+                            txtResult.Text += "\r\n ID: " + idSub;
+
+                            string restoSub = logSubs.Substring(0, tamanhoSub);
+                            txtResult.Text += "\r\n" + restoSub + "\r\n\r\n";
+                            logSubs = logSubs.Remove(0, tamanhoSub);
+                        }
 
                         resto_log = resto_log.Remove(0, restoCampo);
 
@@ -445,7 +489,25 @@ namespace Mensagem_ISO8583
                         resto_log = resto_log.Remove(0, 4);
                         Campo = resto_log.Substring(0, restoCampo);
 
-                        txtResult.Text += "Bit 60: " + Campo + "\r\n\r\n";
+                        txtResult.Text += "Bit 60: \r\n";
+                        string logSubs = Campo;
+
+                        for (int c = 0; c < logSubs.Length; c++)
+                        {
+
+                            string subCampo = logSubs.Substring(0, 4);
+                            int subInt = Int32.Parse(subCampo);
+                            int tamanhoSub = subInt * 2;
+                            txtResult.Text += "SubCampo: " + subCampo;
+                            logSubs = logSubs.Remove(0, 4);
+
+                            string idSub = logSubs.Substring(0, 2);
+                            txtResult.Text += "\r\n ID: " + idSub;
+
+                            string restoSub = logSubs.Substring(0, tamanhoSub);
+                            txtResult.Text += "\r\n" + restoSub + "\r\n\r\n";
+                            logSubs = logSubs.Remove(0, tamanhoSub);
+                        }
 
                         resto_log = resto_log.Remove(0, restoCampo);
 
@@ -459,7 +521,25 @@ namespace Mensagem_ISO8583
                         resto_log = resto_log.Remove(0, 4);
                         Campo = resto_log.Substring(0, restoCampo);
 
-                        txtResult.Text += "Bit 61: " + Campo + "\r\n\r\n";
+                        txtResult.Text += "Bit 61: \r\n";
+                        string logSubs = Campo;
+
+                        for (int c = 0; c < logSubs.Length; c++)
+                        {
+
+                            string subCampo = logSubs.Substring(0, 4);
+                            int subInt = Int32.Parse(subCampo);
+                            int tamanhoSub = subInt * 2;
+                            txtResult.Text += "SubCampo: " + subCampo;
+                            logSubs = logSubs.Remove(0, 4);
+
+                            string idSub = logSubs.Substring(0, 2);
+                            txtResult.Text += "\r\n ID: " + idSub;
+
+                            string restoSub = logSubs.Substring(0, tamanhoSub);
+                            txtResult.Text += "\r\n" + restoSub + "\r\n\r\n";
+                            logSubs = logSubs.Remove(0, tamanhoSub);
+                        }
 
                         resto_log = resto_log.Remove(0, restoCampo);
 
@@ -473,7 +553,25 @@ namespace Mensagem_ISO8583
                         resto_log = resto_log.Remove(0, 4);
                         Campo = resto_log.Substring(0, restoCampo);
 
-                        txtResult.Text += "Bit 62: " + Campo + "\r\n\r\n";
+                        txtResult.Text += "Bit 62: \r\n";
+                        string logSubs = Campo;
+
+                        for (int c = 0; c < logSubs.Length; c++)
+                        {
+
+                            string subCampo = logSubs.Substring(0, 4);
+                            int subInt = Int32.Parse(subCampo);
+                            int tamanhoSub = subInt * 2;
+                            txtResult.Text += "SubCampo: " + subCampo;
+                            logSubs = logSubs.Remove(0, 4);
+
+                            string idSub = logSubs.Substring(0, 2);
+                            txtResult.Text += "\r\n ID: " + idSub;
+
+                            string restoSub = logSubs.Substring(0, tamanhoSub);
+                            txtResult.Text += "\r\n" + restoSub + "\r\n\r\n";
+                            logSubs = logSubs.Remove(0, tamanhoSub);
+                        }
 
                         resto_log = resto_log.Remove(0, restoCampo);
 
@@ -487,7 +585,25 @@ namespace Mensagem_ISO8583
                         resto_log = resto_log.Remove(0, 4);
                         Campo = resto_log.Substring(0, restoCampo);
 
-                        txtResult.Text += "Bit 63: " + Campo + "\r\n\r\n";
+                        txtResult.Text += "Bit 63: \r\n";
+                        string logSubs = Campo;
+
+                        for (int c = 0; c < logSubs.Length; c++)
+                        {
+
+                            string subCampo = logSubs.Substring(0, 4);
+                            int subInt = Int32.Parse(subCampo);
+                            int tamanhoSub = subInt * 2;
+                            txtResult.Text += "SubCampo: " + subCampo;
+                            logSubs = logSubs.Remove(0, 4);
+
+                            string idSub = logSubs.Substring(0, 2);
+                            txtResult.Text += "\r\n ID: " + idSub;
+
+                            string restoSub = logSubs.Substring(0, tamanhoSub);
+                            txtResult.Text += "\r\n" + restoSub + "\r\n\r\n";
+                            logSubs = logSubs.Remove(0, tamanhoSub);
+                        }
 
                         resto_log = resto_log.Remove(0, restoCampo);
 
@@ -496,7 +612,7 @@ namespace Mensagem_ISO8583
                     {
                         string Campo = resto_log.Substring(0, 16);
 
-                        txtResult.Text += "Bit 64: " + Campo + "\r\n\r\n";
+                        txtResult.Text += "Bit 64: " + "\r\n" + "MAC: " + Campo + "\r\n\r\n";
 
                         resto_log = resto_log.Remove(0, 16);
 
